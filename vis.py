@@ -42,7 +42,7 @@ def prediction_triangle(df):
     
     p = figure(plot_width=600, plot_height=600, 
                toolbar_location = 'right',
-               tools='pan,box_zoom,wheel_zoom,reset')
+               tools='pan,box_zoom,wheel_zoom,reset,resize')
     p.add_tools(hover)
     circles = p.circle('prob1', 'prob2', size=10, source=source)
     circles.glyph.fill_color = 'true_label_color'
